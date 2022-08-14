@@ -32,7 +32,7 @@ Nous avons à disposition les APIs de Google (place et geocoding).
 ## 3. Procédure de mise en place en local
 
 - Cloner le dossier sur votre ordinateur avec  
-  `git clone https://EdelweissFlo@bitbucket.org/cooperider/csvpointstojson.git`  
+  `git clone https://github.com/AnxionnazFlo/CSVPointsToJson_V1.0`  
 
 - Changer le path vers le fichier CSV à traiter
 
