@@ -5,7 +5,7 @@ async function geolocatFromAPI(lat, lng) {
         //##############################################################################################################################
         //                    DONT FORGET TO BRING YOU OWN API KEY
         //##############################################################################################################################
-        await fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=AIzaSyDTrNdybDPPWrjtVMV133Noai0MbdrQJAQ`, { crossDomain: true })
+        await fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=Your_api_key`, { crossDomain: true })
             .then((res) => res.json())
             // .then((res) => getDetailsFromAPI(res.results[0].place_id));
             .then((res) => selectPlaces(res));
@@ -29,7 +29,7 @@ async function getDetailsFromAPI(placeID) {
         //##############################################################################################################################
         //                    DONT FORGET TO BRING YOU OWN API KEY
         //##############################################################################################################################
-        await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeID}&key=AIzaSyDLti_up7hYeptK2So3HdYbydvrcJG6oa4`, { crossDomain: true })
+        await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeID}&key=Your_api_key`, { crossDomain: true })
             .then((res) => res.json())
             .then((res) => storeDatas(res));
     } catch (error) {
