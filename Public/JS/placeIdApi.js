@@ -7,7 +7,7 @@ async function getIdsFromAPI(place) {
         //##############################################################################################################################
         //                    DONT FORGET TO BRING YOU OWN API KEY
         //##############################################################################################################################
-        await fetch(`https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=AIzaSyDTrNdybDPPWrjtVMV133Noai0MbdrQJAQ&inputtype=textquery&input=${place}`, { crossDomain: true })
+        await fetch(`https://maps.googleapis.com/maps/api/place/findplacefromtext/json?key=Your_api_key&inputtype=textquery&input=${place}`, { crossDomain: true })
             .then((res) => res.json())
             .then((res) => selectPlaces(res));
 
@@ -33,7 +33,7 @@ async function getDetailsFromAPI(placeID) {
         //##############################################################################################################################
         //                    DONT FORGET TO BRING YOU OWN API KEY
         //##############################################################################################################################
-        await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeID}&key=AIzaSyDLti_up7hYeptK2So3HdYbydvrcJG6oa4`, { crossDomain: true })
+        await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeID}&key=Your_api_key`, { crossDomain: true })
             .then((res) => res.json())
             .then((res) => storeDatas(res));
 
